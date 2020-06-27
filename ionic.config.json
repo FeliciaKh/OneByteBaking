@@ -1,0 +1,7 @@
+{
+  "name": "OneByteBaking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
