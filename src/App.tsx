@@ -13,7 +13,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle } from 'ionicons/icons';
 import Browse from './pages/Browse';
 import Favorite from './pages/Favorite';
-import Tab3 from './pages/Tab3';
+import Search from './pages/Search';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -41,7 +41,7 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route path="/browse" component={Browse} exact={true} />
           <Route path="/favorite" component={Favorite} exact={true} />
-          <Route path="/tab3" component={Tab3} />
+          <Route path="/search" component={Search} />
           <Route path="/" render={() => <Redirect to="/browse" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -49,13 +49,13 @@ const App: React.FC = () => (
             <IonIcon icon={triangle} />
             <IonLabel>Browse</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/favorite">
+          <IonTabButton tab="favorite" href="/favorite">
             <IonIcon icon={ellipse} />
             <IonLabel>Favorite</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="search" href="/search">
             <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonLabel>Search</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
