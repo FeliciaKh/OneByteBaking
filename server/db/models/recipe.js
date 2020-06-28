@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const db = require('../db')
 
-const Recipe = de.define('recipe', {
+const Recipe = db.define('recipe', {
     name: {
         type: Sequelize.STRING, 
         allowNull: false, 
@@ -12,6 +12,10 @@ const Recipe = de.define('recipe', {
         validate: {
             isUrl: true
         }
+    }, 
+    description: {
+        type: Sequelize.TEXT, 
+        allowNull: false
     }
 })
 
