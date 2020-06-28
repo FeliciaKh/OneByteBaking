@@ -51,7 +51,6 @@ const App: React.FC = () => (
           </IonTabButton>
           <IonTabButton tab="favorite" href="/favorite">
             <IonIcon icon={bookmarks} />
-            {/* <ion-icon name="bookmarks-outline" /> */}
             <IonLabel>Favorite</IonLabel>
           </IonTabButton>
           <IonTabButton tab="search" href="/search">

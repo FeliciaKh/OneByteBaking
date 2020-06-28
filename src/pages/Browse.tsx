@@ -1,8 +1,9 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardTitle, IonCardHeader } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Browse.css';
-import {Recipe} from './Recipe'
+// import {Recipe} from './Recipe'
+import recipeData from './data'
 
 
 const Browse: React.FC = () => {
@@ -19,9 +20,13 @@ const Browse: React.FC = () => {
             <IonTitle size="large">Browse</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <IonCard>
+          <IonCardHeader>
+            <img src='https://www.recipetineats.com/wp-content/uploads/2016/08/Brownies_0.jpg' />
+            <IonCardTitle>Brownies</IonCardTitle> 
+          </IonCardHeader>
+        </IonCard>
         <ExploreContainer name="Browser page"> 
-        Hello World!
-          {/* <Recipe /> */}
         </ExploreContainer>
       </IonContent>
     </IonPage>
