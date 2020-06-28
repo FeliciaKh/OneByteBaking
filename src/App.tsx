@@ -10,7 +10,7 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { layers, bookmarks, search } from 'ionicons/icons';
 import Browse from './pages/Browse';
 import Favorite from './pages/Favorite';
 import Search from './pages/Search';
@@ -46,15 +46,16 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="browse" href="/browse">
-            <IonIcon icon={triangle} />
+            <IonIcon icon={layers} />
             <IonLabel>Browse</IonLabel>
           </IonTabButton>
           <IonTabButton tab="favorite" href="/favorite">
-            <IonIcon icon={ellipse} />
+            <IonIcon icon={bookmarks} />
+            {/* <ion-icon name="bookmarks-outline" /> */}
             <IonLabel>Favorite</IonLabel>
           </IonTabButton>
           <IonTabButton tab="search" href="/search">
-            <IonIcon icon={square} />
+            <IonIcon icon={search} />
             <IonLabel>Search</IonLabel>
           </IonTabButton>
         </IonTabBar>
