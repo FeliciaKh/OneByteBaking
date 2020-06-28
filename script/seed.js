@@ -1,7 +1,7 @@
 'use strict'
 
-const db = require('./db')
-const {Recipe} = require('./db/models')
+const db = require('../server/db')
+const {Recipe} = require('../server/db/models')
 
 const descriptionText = 'Click on the card to read more about this recipe!'
 
