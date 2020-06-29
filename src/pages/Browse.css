@@ -1,0 +1,40 @@
+/* .card-background-page { */
+
+ion-card {
+    position: relative;
+    display: inline-grid;
+    text-align: center;
+}
+  
+ion-card-title {
+    position: absolute;
+    top: 73%;
+    font-size: 3.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #580C1F;
+}
+
+.light{
+    position: absolute;
+    top: 80%;
+    font-size: 3.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #DAB6C4;
+}
+
+img {
+    height: 30em;
+    width: 30em;
+}
+  
+/* .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+} */
+  
+/* } */
